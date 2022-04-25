@@ -1,5 +1,5 @@
 import { nodeListForEach } from 'govuk-frontend/govuk-esm/common';
-import { Button } from 'govuk-frontend';
+import { Button, Radios } from 'govuk-frontend';
 import TimeoutDialog from 'hmrc-frontend/hmrc/components/timeout-dialog/timeout-dialog.js';
 import CookieBanner from './cookie-banner.js';
 
@@ -17,6 +17,11 @@ function initAll(opts) {
   var $buttons = scope.querySelectorAll('[data-module="govuk-button"]');
   nodeListForEach($buttons, function ($button) {
     new Button($button).init();
+  });
+
+  var $radios = scope.querySelectorAll('[data-module="govuk-radios"]');
+  nodeListForEach($radios, function ($radio) {
+    new Radios($radio).init();
   });
 
   // HMRC Session Timeout Dialog

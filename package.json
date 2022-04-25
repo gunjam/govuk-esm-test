@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rollup -c"
+    "build": "npm run build:js && npm run build:scss",
+    "build:js": "rollup -c",
+    "build:scss": "sass assets/scss/all.scss -I node_modules --no-source-map dist/css/all.css"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +16,7 @@
     "govuk-frontend": "github:alphagov/govuk-frontend#202c4c6f82b13dd6a06183380096c0e78933d5e0",
     "hmrc-frontend": "^5.0.3",
     "rollup": "^2.70.2",
-    "rollup-plugin-terser": "^7.0.2"
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.50.1"
   }
 }

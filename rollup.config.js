@@ -3,7 +3,7 @@ const { terser } = require('rollup-plugin-terser');
 const alias = require('@rollup/plugin-alias');
 
 module.exports = {
-  input: 'assets/all.js',
+  input: 'assets/js/all.js',
   output: [{
     file: 'dist/js/all.js',
     name: 'GOVUKFrontend',
