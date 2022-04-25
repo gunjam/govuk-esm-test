@@ -1,0 +1,19 @@
+{
+  "name": "govuk-esm-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rollup/plugin-alias": "^3.1.9",
+    "@rollup/plugin-node-resolve": "^13.2.1",
+    "govuk-frontend": "github:alphagov/govuk-frontend#202c4c6f82b13dd6a06183380096c0e78933d5e0",
+    "hmrc-frontend": "^5.0.3",
+    "rollup": "^2.70.2",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
